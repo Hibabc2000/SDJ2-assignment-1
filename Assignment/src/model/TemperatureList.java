@@ -4,19 +4,25 @@ import java.util.ArrayList;
 
 public class TemperatureList
 {
-  private ArrayList<Temperature> tempList = new ArrayList<>();
+  private ArrayList<Temperature> list;
 
-  public  ArrayList getList()
+  public TemperatureList()
   {
-    return tempList;
+    this.list = new ArrayList<>();
+  }
 
-  }
-  public void add(Temperature temp)
+  public void addTemperature(Temperature temperature)
   {
-    tempList.add(temp);
+    list.add(temperature);
   }
+
+  public  ArrayList<Temperature> getList()
+  {
+    return list;
+  }
+
   public void remove(Temperature temp)
   {
-    tempList.remove(temp);
+    list.remove(temp);
   }
 }
