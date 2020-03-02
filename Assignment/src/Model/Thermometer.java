@@ -28,7 +28,7 @@ public class Thermometer implements Runnable
    * where 1 is close to the heater and 7 is in the opposite corner
    * @param t0 the outdoor temperature (valid in the range [-20; 20])
    * @param s the number of seconds since last measurement [4; 8]
-   * @return the temperature
+   * @return the temperature as
    */
   public double internalTemperature(double t, int p, int d, double t0, int s)
   {
