@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Logs.Logs">
+   <children>
+      <FlowPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <MenuBar prefHeight="26.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Power">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu disable="true" mnemonicParsing="false" text="Temprature Logs">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <LineChart prefHeight="342.0" prefWidth="600.0">
+              <xAxis>
+                <CategoryAxis prefHeight="35.0" prefWidth="545.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis lowerBound="-15.0" side="LEFT" upperBound="45.0" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
