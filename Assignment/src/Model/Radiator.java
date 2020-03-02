@@ -28,7 +28,7 @@ currentState.turnDown(this);
     else if(currentState instanceof  State2 ) {return 2;}
     else if(currentState instanceof  State3 ){return 3;}
     else {
-      System.out.println("wtf,dude?");
+      System.out.println("wtf, bitch?");
     }
     return temp;
   }
