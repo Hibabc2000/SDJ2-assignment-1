@@ -5,7 +5,6 @@ import java.beans.PropertyChangeSupport;
 public class Radiator
 {
   private StateControl currentState;
-  private PropertyChangeSupport support;
 
   public Radiator()
   {
@@ -15,14 +14,11 @@ public class Radiator
   public void turnUp()
   {
     currentState.turnUp(this);
-    support.firePropertyChange("RadiatorState", null, getState());
-    support = new PropertyChangeSupport(this);
   }
 
   public void turnDown()
   {
     currentState.turnDown(this);
-    support.firePropertyChange("RadiatorState", null, getState());
   }
 
   public void setState(StateControl state)

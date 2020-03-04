@@ -24,11 +24,13 @@ public class MainModelImplementation implements MainModel
   public void turnUp()
   {
     radiator.turnUp();
+    support.firePropertyChange("RadiatorState", null, radiator.getState());
   }
 
   public void turnDown()
   {
     radiator.turnDown();
+    support.firePropertyChange("RadiatorState", null, radiator.getState());
   }
 
   ////  Use for VM
