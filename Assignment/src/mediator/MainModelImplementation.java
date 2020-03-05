@@ -37,6 +37,11 @@ public class MainModelImplementation implements MainModel
   //  public void getPowerState(){
   //    radiator.getState();
   //  }
+  @Override public void setValue(int powerState)
+  {
+    radiator.setState(powerState);
+    support.firePropertyChange("RadiatorState", null, radiator.getState());
+  }
 
   @Override public void updateExternalTemperature(String id, double temperature)
   {

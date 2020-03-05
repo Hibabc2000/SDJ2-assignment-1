@@ -7,6 +7,7 @@ public interface MainModel
   // Add in uml
   void updateExternalTemperature(String id, double temperature);
   void updateTemperature(String id, double temperature);
+  void setValue(int powerState);
 
   void addListener(PropertyChangeListener lstnr);
   void addPropertyChangeListener(String eventName,

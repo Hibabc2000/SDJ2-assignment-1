@@ -25,6 +25,21 @@ public class Radiator
   {
     currentState = state;
   }
+  public void setState(int stateNumber)
+  {
+    switch (stateNumber)
+    {
+      case 0:
+        currentState = new OffState();
+        break;
+      case 1:
+        currentState = new State1();
+      case 2:
+        currentState = new State2();
+      case 3:
+        currentState = new State3(this);
+    }
+  }
 
   public int getState()
   {
