@@ -5,9 +5,9 @@ import mediator.MainModelImplementation;
 
 public class ModelFactory
 {
-  MainModel model;
+  private MainModel model;
 
-  MainModel getMainModel()
+  public MainModel getMainModel()
   {
     if(model == null)
       return new MainModelImplementation();
