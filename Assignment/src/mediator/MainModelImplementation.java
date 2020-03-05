@@ -48,12 +48,12 @@ public class MainModelImplementation implements MainModel
   }
 
   //  Use for VM
-  @Override public void updateTemperature(String id, double value)
+  @Override public void updateTemperature(String id, double temperature)
   {
-    Temperature temperature = new Temperature(id, value);
-    temperatureList.addTemperature(temperature);
+    Temperature temp = new Temperature(id, temperature);
+    temperatureList.addTemperature(temp);
     support.firePropertyChange("TemperatureUpdate", null, temp);
-    System.out.println("Temperature update: " + id + " " + value);
+    System.out.println("Temperature update: " + id + " " + temperature);
 
   }
 
