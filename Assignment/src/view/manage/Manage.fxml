@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.manage.ManageController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.manage.ManageController">
    <children>
       <GridPane prefHeight="400.0" prefWidth="600.0">
         <columnConstraints>
@@ -23,7 +31,7 @@
             <RowConstraints maxHeight="96.60001220703123" minHeight="10.0" prefHeight="80.60001220703123" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Slider fx:id="radP" blockIncrement="1.0" majorTickUnit="1.0" max="3.0" minorTickCount="0" prefHeight="14.0" prefWidth="548.0" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <Slider fx:id="radP" blockIncrement="1.0" majorTickUnit="1.0" max="3.0" minorTickCount="0" prefHeight="14.0" prefWidth="548.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <MenuBar prefHeight="26.0" prefWidth="547.0" GridPane.columnSpan="4">
               <menus>
                 <Menu mnemonicParsing="false" text="Power">
