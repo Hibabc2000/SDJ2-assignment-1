@@ -20,6 +20,11 @@ public class MainModelImplementation implements MainModel
     temperatureList = new TemperatureList();
   }
 
+  public TemperatureList getTemperatureList()
+  {
+    return temperatureList;
+  }
+
   //  Use for VM
   public void turnUp()
   {
