@@ -1,3 +1,6 @@
+import core.ModelFactory;
+import core.ViewHandler;
+import core.ViewModelFactory;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
