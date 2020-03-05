@@ -42,7 +42,7 @@ public class MainModelImplementation implements MainModel
   {
     Temperature temp = new Temperature(id, temperature);
     temperatureList.addTemperature(temp);
-    support.firePropertyChange("ExternalTemperatureUpdate", null, temperature);
+    support.firePropertyChange("ExternalTemperatureUpdate", null, temp);
     System.out
         .println("External Temperature update: " + id + " " + temperature);
   }
@@ -52,7 +52,7 @@ public class MainModelImplementation implements MainModel
   {
     Temperature temperature = new Temperature(id, value);
     temperatureList.addTemperature(temperature);
-    support.firePropertyChange("TemperatureUpdate", null, temperature);
+    support.firePropertyChange("TemperatureUpdate", null, temp);
     System.out.println("Temperature update: " + id + " " + value);
 
   }
